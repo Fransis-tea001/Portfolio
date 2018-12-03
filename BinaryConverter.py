@@ -1,5 +1,7 @@
 #BinaryConverter By Atip Earth
 
+import os
+
 print("---Binary converter program Start---")
 print("Decimal to Binary : 1\nBinary to Decimal : 2")
 
