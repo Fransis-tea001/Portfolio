@@ -46,8 +46,9 @@ def DnB(Dnum):
         if D == 0:
             break
     print("Result is : ",end='')
-    for R in Result:
+    for R in reversed(Result):
         print(R,end='')
+    print("")
         
 programSelect = str(input("Type program you want to start : "))
 if programSelect == '1' :
