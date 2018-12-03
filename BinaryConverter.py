@@ -1,4 +1,4 @@
-#โปรเเกรมแปลงเลขฐาน2 โดยอธิป บุญยงค์ 1hr.
+#BinaryConverter By Atip Earth
 
 print("---Binary converter program Start---")
 print("Decimal to Binary : 1\nBinary to Decimal : 2")
