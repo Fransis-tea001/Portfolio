@@ -55,15 +55,46 @@ def DnB(Dnum):
 
 
 programSelect = str(input("Type program you want to start or exit : "))
+
 if programSelect == '1' :
-    num = int(input("Pls Enter Decimal number to convert : "))
-    DnB(num)
+    while True:
+        print("Pls Enter Decimal number to convert ",end='')
+        num = input("or press 'e' to exit : ")
+        if num == 'e':
+            os.system("clear")
+            sys.exit(0)
+        else:
+            DnB(int(num))
+            print("Press 'c' to continue convert",end='')
+            con1 = input("or press '3' to exit : ")
+            if con1 == '3':
+                os.system("clear")
+                sys.exit(0)
+            elif con1 == 'c':
+                os.system("clear")
+
 elif programSelect == '2' :
-    bi = int(input("Pls Enter Binary number to convert : "))
-    BnD(bi)
+    while True:
+        print("Pls Enter Binary number to convert",end='')
+        bi = input(" or press 'e' to exit : ")
+        if bi == 'e':
+            os.system("clear")
+            sys.exit(0)
+        else:
+            BnD(int(bi))
+            print("Press 'c' to continue convert",end='')
+            con1 = input("or press '3' to exit : ")
+            if con1 == '3':
+                os.system("clear")
+                sys.exit(0)
+            elif con1 == 'c':
+                os.system("clear")
+            
+
 elif programSelect == '3':
     print("---Exit program---")
     sys.exit(0)
+
 else :
     print("Error")
 
