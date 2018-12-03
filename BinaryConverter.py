@@ -1,9 +1,10 @@
 #BinaryConverter By Atip Earth
 
 import os
+import sys
 
 print("---Binary converter program Start---")
-print("Decimal to Binary : 1\nBinary to Decimal : 2")
+print("Decimal to Binary : 1\nBinary to Decimal : 2\nExit : 3")
 
 def BnD(Binum):
     #Trasform Bibary num into array
@@ -51,14 +52,18 @@ def DnB(Dnum):
     for R in reversed(Result):
         print(R,end='')
     print("")
-        
-programSelect = str(input("Type program you want to start : "))
+
+
+programSelect = str(input("Type program you want to start or exit : "))
 if programSelect == '1' :
     num = int(input("Pls Enter Decimal number to convert : "))
     DnB(num)
 elif programSelect == '2' :
     bi = int(input("Pls Enter Binary number to convert : "))
     BnD(bi)
+elif programSelect == '3':
+    print("---Exit program---")
+    sys.exit(0)
 else :
     print("Error")
 
