@@ -2,6 +2,8 @@
 
 import os
 import sys
+import time
+from time import sleep
 
 print("---Binary converter program Start---")
 
@@ -97,6 +99,8 @@ while True:
 
     elif programSelect == '3':
         print("---Exit program---")
+        time.sleep(2)
+        os.system("clear")
         sys.exit(0)
 
     else :
