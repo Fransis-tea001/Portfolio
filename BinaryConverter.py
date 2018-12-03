@@ -4,7 +4,6 @@ import os
 import sys
 
 print("---Binary converter program Start---")
-print("Decimal to Binary : 1\nBinary to Decimal : 2\nExit : 3")
 
 def BnD(Binum):
     #Trasform Bibary num into array
@@ -53,50 +52,57 @@ def DnB(Dnum):
         print(R,end='')
     print("")
 
+while True:
+    print("Decimal to Binary : 1\nBinary to Decimal : 2\nExit : 3")
+    programSelect = str(input("Type program you want to start or exit : "))
 
-programSelect = str(input("Type program you want to start or exit : "))
+    if programSelect == '1' :
+        while True:
+            print("Pls Enter Decimal number to convert ",end='')
+            num = input("or press 'e' to exit : ")
+            if num == 'e':
+                os.system("clear")
+                break
+                #sys.exit(0)
+            else:
+                DnB(int(num))
+                print("Press 'c' to continue convert",end='')
+                con1 = input("or press '3' to exit : ")
+                if con1 == '3':
+                    os.system("clear")
+                    break
+                    #sys.exit(0)
+                elif con1 == 'c':
+                    os.system("clear")
 
-if programSelect == '1' :
-    while True:
-        print("Pls Enter Decimal number to convert ",end='')
-        num = input("or press 'e' to exit : ")
-        if num == 'e':
-            os.system("clear")
-            sys.exit(0)
-        else:
-            DnB(int(num))
-            print("Press 'c' to continue convert",end='')
-            con1 = input("or press '3' to exit : ")
-            if con1 == '3':
+    elif programSelect == '2' :
+        while True:
+            print("Pls Enter Binary number to convert",end='')
+            bi = input(" or press 'e' to exit : ")
+            if bi == 'e':
                 os.system("clear")
-                sys.exit(0)
-            elif con1 == 'c':
-                os.system("clear")
-
-elif programSelect == '2' :
-    while True:
-        print("Pls Enter Binary number to convert",end='')
-        bi = input(" or press 'e' to exit : ")
-        if bi == 'e':
-            os.system("clear")
-            sys.exit(0)
-        else:
-            BnD(int(bi))
-            print("Press 'c' to continue convert",end='')
-            con1 = input("or press '3' to exit : ")
-            if con1 == '3':
-                os.system("clear")
-                sys.exit(0)
-            elif con1 == 'c':
-                os.system("clear")
+                break
+                #sys.exit(0)
+            else:
+                BnD(int(bi))
+                print("Press 'c' to continue convert",end='')
+                con1 = input("or press '3' to exit : ")
+                if con1 == '3':
+                    os.system("clear")
+                    break
+                    #sys.exit(0)
+                elif con1 == 'c':
+                    os.system("clear")
             
 
-elif programSelect == '3':
-    print("---Exit program---")
-    sys.exit(0)
+    elif programSelect == '3':
+        print("---Exit program---")
+        sys.exit(0)
 
-else :
-    print("Error")
+    else :
+        print("Error")
+        os.system("clear")
+        break
 
 
 
