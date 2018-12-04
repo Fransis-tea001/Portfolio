@@ -1,4 +1,4 @@
-#BinaryConverter By Atip Earth
+#BinaryConverter Program By Atip Earth
 
 import os
 import sys

@@ -1,3 +1,5 @@
+#ContactList Program By Atip Boonyong
+
 import os
 import sys
 
@@ -15,6 +17,7 @@ while True:
     print("1.Add contact\n2.Delete contact\n3.Show all contact\n4.Exit Program")
     programSelect = input("Enter number of program you want to start : ")
 
+    #Add contact
     if programSelect == '1':
         os.system('clear')
         while True:
@@ -28,6 +31,7 @@ while True:
             elif con == 'N':
                 break
     
+    #Del contact
     elif programSelect == '2':
         while True:
             nameDel = input("Enter contact name you want to delete : ") 
@@ -44,6 +48,7 @@ while True:
             elif con == 'N':
                 break
 
+    #Show contact
     elif programSelect == '3':
         os.system('clear')
         if not contactlist:
@@ -58,6 +63,7 @@ while True:
             input("")
             os.system('clear')
 
+    #Exit program
     elif programSelect == '4':
         os.system('clear')
         sys.exit(0)
