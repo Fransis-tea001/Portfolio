@@ -3,6 +3,8 @@
 import os
 import sys
 
+os.system('clear')
+
 print("---Start ContactList Program---")
 
 contactlist = {}

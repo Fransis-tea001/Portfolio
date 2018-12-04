@@ -5,6 +5,8 @@ import sys
 import time
 from time import sleep
 
+os.system('clear')
+
 print("---Binary converter program Start---")
 
 def BnD(Binum):
