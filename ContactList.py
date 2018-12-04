@@ -46,11 +46,17 @@ while True:
 
     elif programSelect == '3':
         os.system('clear')
-        for Lname in contactlist:
-            print(Lname ,contactlist[Lname])
-        print("Press Enter to back to menu")
-        
-
+        if not contactlist:
+            print("Your contact is empty")
+            print("***Press any key to back to menu***")
+            input("")
+            os.system('clear')
+        else:
+            for Lname in contactlist:
+                print(Lname ,contactlist[Lname])
+            print("***Press Any key to back to menu***")
+            input("")
+            os.system('clear')
 
     elif programSelect == '4':
         os.system('clear')
