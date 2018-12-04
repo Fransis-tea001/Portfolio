@@ -2,6 +2,8 @@
 
 import os
 import sys
+import time
+from time import sleep
 
 os.system('clear')
 
@@ -67,6 +69,8 @@ while True:
 
     #Exit program
     elif programSelect == '4':
+        print("---Exit Program---")
+        time.sleep(2)
         os.system('clear')
         sys.exit(0)
 
